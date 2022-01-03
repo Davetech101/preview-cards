@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+body{
+    background-color: rgba(7, 1, 14, 0.884);
+    padding: 15rem 20rem;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+.all-cards{
+    display: flex;
+}
+
+
+.cards{
+    padding: 5rem;
+   color:  hsla(0, 0%, 100%, 0.75);
+   font-family:Lexend Deca ;
+   font-weight: 400;
+   font-size: 2rem;
+   position: relative;
+}
+
+ .tn{
+    background-color:  hsl(0, 0%, 95%);
+    border:1px solid transparent;
+    border-radius: 777rem;
+    display: inline-block;
+   padding: 1rem 2rem;
+   position: absolute;
+   bottom: 2rem;
+   left: 5rem;
+}
+
+.cards__text{
+    padding: 0rem 0 4rem 0;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.tn:hover{
+    color: hsl(0, 0%, 95%);
+    background-color:  transparent;
+    border: 1px solid  hsl(0, 0%, 95%);
+    cursor: pointer;
+
+}
+
+.sedan-tn{
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs-tn{
+    color:hsl(184, 100%, 22%);
+}
+
+.luxury-tn{
+    color: hsl(179, 100%, 13%) ;
+
+}
+
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+   
+}
+
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+@media only screen and (min-width: 112.5em ){
+   
+   
+    html{
+        font-size: 125%;
+    }
+}
+
+@media only screen and (max-width: 75em ){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media only screen and (max-width: 56.25em ){
+    body{
+        background-color:white;
+        padding: 8rem 10rem ;
+    }
+   
+    html{
+        font-size: 60%;
+    }
+
+    .all-cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sedans{
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        border-bottom-left-radius: 0;
+    }
+    
+    .luxury{
+        border-bottom-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        border-top-right-radius: 0;
+    }
+}
+
+@media only screen and (max-width: 37.5em ){
+    body{
+        background-color:white;
+        padding: 8rem 4rem ;
+    }
+    
+    html{
+        font-size: 50%;
+    }
+    
+    .all-cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sedans{
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        border-bottom-left-radius: 0;
+    }
+    
+    .luxury{
+        border-bottom-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        border-top-right-radius: 0;
+    }
+}
